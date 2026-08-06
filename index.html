@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade — Agente Reviews Seletto</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+    line-height: 1.65;
+    color: #1a1a1a;
+    background: #ffffff;
+  }
+  h1 { font-size: 1.8rem; margin-bottom: 0.2em; }
+  h2 { font-size: 1.2rem; margin-top: 2.2em; border-top: 1px solid #e5e5e5; padding-top: 1.2em; }
+  .meta { color: #666; font-size: 0.9rem; margin-bottom: 2.5em; }
+  ul { padding-left: 1.3em; }
+  li { margin-bottom: 0.4em; }
+  a { color: #1a56db; }
+  footer { margin-top: 3em; font-size: 0.85rem; color: #888; }
+</style>
+</head>
+<body>
+
+<h1>Política de Privacidade</h1>
+<p class="meta">Agente Reviews Seletto · Última atualização: 6 de agosto de 2026</p>
+
+<p>
+Esta Política de Privacidade descreve como o aplicativo <strong>Agente Reviews Seletto</strong>
+("o Aplicativo") acessa, usa e protege informações ao se conectar à Google Business Profile API
+para gerenciar avaliações de clientes do perfil comercial da Seletto Investimentos no Google.
+</p>
+
+<p>
+O Aplicativo é de uso próprio da Seletto Investimentos e não é distribuído a terceiros nem
+oferecido como serviço público neste momento.
+</p>
+
+<h2>1. Quais dados o Aplicativo acessa</h2>
+<p>Ao conceder autorização via OAuth do Google, o Aplicativo acessa exclusivamente:</p>
+<ul>
+  <li>Informações do Perfil de Empresa (Google Business Profile) associado à conta autorizada, incluindo nome, endereço e dados públicos do local.</li>
+  <li>Avaliações (reviews) recebidas no perfil: nota, texto da avaliação, nome público do avaliador e data.</li>
+  <li>Respostas do proprietário já existentes nas avaliações, para evitar duplicidade.</li>
+</ul>
+<p>
+O Aplicativo solicita o escopo OAuth
+<code>https://www.googleapis.com/auth/business.manage</code>, necessário para ler avaliações e
+publicar respostas em nome do perfil autorizado.
+</p>
+
+<h2>2. Como os dados são usados</h2>
+<ul>
+  <li>Identificar avaliações sem resposta.</li>
+  <li>Gerar uma resposta adequada ao conteúdo e à nota da avaliação.</li>
+  <li>Publicar a resposta diretamente (avaliações 3-5 estrelas) ou submetê-la para aprovação humana antes da publicação (avaliações 1-2 estrelas).</li>
+  <li>Registrar, internamente, quais avaliações já foram respondidas, para não duplicar ou sobrescrever respostas existentes.</li>
+</ul>
+<p>Os dados não são usados para nenhuma outra finalidade, como publicidade, perfilamento de usuários ou venda a terceiros.</p>
+
+<h2>3. Compartilhamento de dados</h2>
+<p>
+O Aplicativo <strong>não compartilha, vende ou transfere</strong> dados de avaliações ou do perfil
+comercial a terceiros. Os únicos sistemas envolvidos são:
+</p>
+<ul>
+  <li>A API oficial do Google Business Profile (Google LLC), para leitura e resposta de avaliações.</li>
+  <li>Infraestrutura de execução automatizada (GitHub Actions) usada exclusivamente para agendar a rotina diária, sem exposição pública dos dados de avaliações.</li>
+</ul>
+
+<h2>4. Armazenamento e retenção</h2>
+<p>
+O Aplicativo mantém um registro mínimo (identificadores de avaliações já respondidas) apenas para
+controle interno de duplicidade, armazenado em repositório privado. Nenhum dado pessoal de
+avaliadores é armazenado além do necessário para essa finalidade operacional.
+</p>
+
+<h2>5. Segurança</h2>
+<p>
+As credenciais de acesso (tokens OAuth) são armazenadas de forma criptografada como segredos de
+repositório (GitHub Secrets) e não são expostas publicamente nem compartilhadas com terceiros.
+</p>
+
+<h2>6. Revogação de acesso</h2>
+<p>
+O proprietário do Perfil de Empresa pode revogar a autorização do Aplicativo a qualquer momento em
+<a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.
+</p>
+
+<h2>7. Contato</h2>
+<p>
+Dúvidas sobre esta política podem ser enviadas para
+<a href="mailto:rafaeldacunhaconsultor@gmail.com">rafaeldacunhaconsultor@gmail.com</a>.
+</p>
+
+<footer>
+© 2026 Seletto Investimentos. Esta página é hospedada publicamente apenas para fins de verificação
+de aplicativo OAuth junto ao Google.
+</footer>
+
+</body>
+</html>
